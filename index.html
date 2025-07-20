@@ -1,0 +1,88 @@
+  <!doctype html>
+  <html lang="es">
+    <head>
+      <meta charset="UTF-8" />
+      <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+      <!-- SEO Meta Tags -->
+      <title>WeatherMaster - Pronóstico del Tiempo en Tiempo Real</title>
+      <meta name="description" content="WeatherMaster: Aplicación meteorológica profesional con datos en tiempo real y pronósticos de 5 días para cualquier ciudad del mundo. Interfaz moderna y responsiva." />
+      <meta name="keywords" content="clima, tiempo, pronóstico, meteorología, weather, temperatura, lluvia, viento" />
+      <meta name="author" content="WeatherMaster Team" />
+      
+      <!-- Open Graph Meta Tags -->
+      <meta property="og:title" content="WeatherMaster - Pronóstico del Tiempo en Tiempo Real" />
+      <meta property="og:description" content="Obtén información meteorológica precisa y actualizada con pronósticos de 5 días para cualquier ciudad del mundo." />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://weathermaster.com" />
+      <meta property="og:image" content="https://weathermaster.com/og-image.jpg" />
+      <meta property="og:locale" content="es_ES" />
+      
+      <!-- Twitter Card Meta Tags -->
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="WeatherMaster - Pronóstico del Tiempo" />
+      <meta name="twitter:description" content="Aplicación meteorológica profesional con datos en tiempo real" />
+      <meta name="twitter:image" content="https://weathermaster.com/twitter-image.jpg" />
+      
+      <!-- Security Headers -->
+      <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://openweathermap.org; connect-src 'self' https://api.openweathermap.org; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none';" />
+      <meta http-equiv="X-Frame-Options" content="DENY" />
+      <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+      <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+      
+      <!-- PWA Meta Tags -->
+      <meta name="theme-color" content="#3b82f6" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+      <meta name="apple-mobile-web-app-title" content="WeatherMaster" />
+      
+      <!-- Preconnect to external domains -->
+      <link rel="preconnect" href="https://api.openweathermap.org" />
+      <link rel="dns-prefetch" href="https://api.openweathermap.org" />
+      
+      <!-- Canonical URL -->
+      <link rel="canonical" href="https://weathermaster.com" />
+      
+      <!-- Structured Data -->
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "WeatherMaster",
+        "description": "Aplicación meteorológica profesional con datos en tiempo real y pronósticos de 5 días",
+        "url": "https://weathermaster.com",
+        "applicationCategory": "Weather",
+        "operatingSystem": "Web Browser",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "WeatherMaster Team"
+        }
+      }
+      </script>
+    </head>
+    <body>
+      <div id="root"></div>
+      <script type="module" src="/src/main.tsx"></script>
+      
+      <!-- Service Worker Registration -->
+      <script>
+        if ('serviceWorker' in navigator && import.meta.env.PROD) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js')
+              .then((registration) => {
+                console.log('SW registered: ', registration);
+              })
+              .catch((registrationError) => {
+                console.log('SW registration failed: ', registrationError);
+              });
+          });
+        }
+      </script>
+    </body>
+  </html>
