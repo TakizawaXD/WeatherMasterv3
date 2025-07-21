@@ -7,7 +7,9 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4.1-38B2AC.svg)](https://tailwindcss.com/)
 
 WeatherMaster es una aplicación meteorológica moderna y profesional que proporciona datos climáticos en tiempo real y pronósticos de 5 días para cualquier ciudad del mundo. Construida con React, TypeScript y Tailwind CSS, ofrece una experiencia de usuario excepcional con diseño responsivo y funcionalidades avanzadas.
+## Proyecto desplegado
 
+https://main.d3flpsenp8p17h.amplifyapp.com/
 ## 🚀 Características Principales
 
 ### 🌍 **Cobertura Global**
