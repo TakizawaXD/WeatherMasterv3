@@ -36,6 +36,38 @@ https://main.d3flpsenp8p17h.amplifyapp.com/
 - **Validación de datos** en tiempo real
 - **Manejo seguro de API keys**
 
+---
+
+### 🛠️ **¿Para qué fue creado el código?**
+
+* Mostrar clima actual y pronóstico de 5 días.
+* Proveer datos precisos en tiempo real.
+* Ofrecer una interfaz moderna, responsiva y rápida.
+* Implementar buenas prácticas de desarrollo frontend.
+* Servir como plantilla profesional para proyectos similares.
+* Facilitar despliegue en la nube (AWS).
+* Integrar seguridad, rendimiento y accesibilidad.
+
+---
+
+### 👤 **¿Para qué tipo de usuarios va dirigido?**
+
+#### Usuarios finales:
+
+* Personas que quieren consultar el clima fácilmente.
+* Usuarios móviles y de escritorio.
+* Personas que prefieren apps visualmente atractivas y fáciles de usar.
+
+#### Desarrolladores:
+
+* Devs que quieren aprender o usar una base sólida en React + TypeScript.
+* Estudiantes o profesionales que buscan ejemplos de arquitectura frontend.
+* Equipos que quieran extender una app meteorológica funcional.
+* Usuarios que necesiten un proyecto listo para producción en AWS.
+
+---
+
+
 ## 📊 Diagrama de Arquitectura
 
 ```mermaid
